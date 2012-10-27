@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Enum\ImageType.cs" />
     <Compile Include="Factories\NinjectControllerFactory.cs" />
+    <Compile Include="Interfaces\IContainerIoC.cs" />
     <Compile Include="Interfaces\IPromotionRepository.cs" />
     <Compile Include="Model\Promotion.cs" />
     <Compile Include="Model\PromotionItem.cs" />

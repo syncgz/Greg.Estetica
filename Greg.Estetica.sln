@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greg.Estetica.Test", "Greg.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greg.Estetica.Core.Test", "Greg.Estetica.Core.Test\Greg.Estetica.Core.Test.csproj", "{69D4B9AA-C022-451A-9217-5F97B4BA7F39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greg.Estetica.Ioc", "Greg.Estetica.Ioc\Greg.Estetica.Ioc.csproj", "{9B6BE299-BF57-4907-911A-33B89CAC1401}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greg.Estetica.IoC.Test", "Greg.Estetica.IoC.Test\Greg.Estetica.IoC.Test.csproj", "{FFADE16A-0DC3-4CE1-A9A3-35C328E9B3D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,14 @@ Global
 		{69D4B9AA-C022-451A-9217-5F97B4BA7F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69D4B9AA-C022-451A-9217-5F97B4BA7F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69D4B9AA-C022-451A-9217-5F97B4BA7F39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B6BE299-BF57-4907-911A-33B89CAC1401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B6BE299-BF57-4907-911A-33B89CAC1401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B6BE299-BF57-4907-911A-33B89CAC1401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B6BE299-BF57-4907-911A-33B89CAC1401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFADE16A-0DC3-4CE1-A9A3-35C328E9B3D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFADE16A-0DC3-4CE1-A9A3-35C328E9B3D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFADE16A-0DC3-4CE1-A9A3-35C328E9B3D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFADE16A-0DC3-4CE1-A9A3-35C328E9B3D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

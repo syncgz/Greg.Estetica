@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2CC4BC4D-4243-4C59-A6F5-E43141F83924}</ProjectGuid>
+    <ProjectGuid>{9B6BE299-BF57-4907-911A-33B89CAC1401}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Greg.Estetica.Test</RootNamespace>
-    <AssemblyName>Greg.Estetica.Test</AssemblyName>
+    <RootNamespace>Greg.Estetica.Ioc</RootNamespace>
+    <AssemblyName>Greg.Estetica.Ioc</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,8 +34,8 @@
     <Reference Include="Moq">
       <HintPath>..\Lib\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.core">
-      <HintPath>..\Lib\nunit.core.dll</HintPath>
+    <Reference Include="Ninject">
+      <HintPath>..\Lib\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,7 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Container.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Greg.Estetica.Core\Greg.Estetica.Core.csproj">
+      <Project>{DFA82311-C6B3-4AF9-9F40-5B97FC8330F7}</Project>
+      <Name>Greg.Estetica.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

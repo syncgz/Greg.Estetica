@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2CC4BC4D-4243-4C59-A6F5-E43141F83924}</ProjectGuid>
+    <ProjectGuid>{FFADE16A-0DC3-4CE1-A9A3-35C328E9B3D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Greg.Estetica.Test</RootNamespace>
-    <AssemblyName>Greg.Estetica.Test</AssemblyName>
+    <RootNamespace>Greg.Estetica.IoC.Test</RootNamespace>
+    <AssemblyName>Greg.Estetica.IoC.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,8 +34,9 @@
     <Reference Include="Moq">
       <HintPath>..\Lib\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.core">
-      <HintPath>..\Lib\nunit.core.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContainerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
