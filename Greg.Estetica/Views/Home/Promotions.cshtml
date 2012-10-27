@@ -1,0 +1,18 @@
+﻿@model Greg.Estetica.Core.Model.Promotion
+<ul class="style1">
+    
+    @foreach(var item in Model.Promotions)
+    {
+        <li style="height: 90px">
+        <div class="image-style3">
+            <span>
+                <img src="@item.ImagePath" width="66" height="69" alt="" /></span>
+            <div class="thumbnails">
+            </div>
+        </div>
+        <h3>@item.Title</h3>
+        @item.Description    
+        <a href="@item.Link">More &#8230;</a>
+    </li>
+    }
+</ul>
