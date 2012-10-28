@@ -20,7 +20,7 @@
 #logo h1, #logo p {
 	margin: 0px;
 	line-height: normal;
-	text-indent: -9999em;
+	/**text-indent: -9999em;*/
 	
 }
 

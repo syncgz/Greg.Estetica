@@ -318,6 +318,7 @@
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Promotion.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Logo.cshtml" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Mvc.resources.dll" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Http.WebHost.resources.dll" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Http.SelfHost.resources.dll" />

@@ -31,6 +31,21 @@ h3
     font-size: 20px;
 }
 
+h4
+{
+    font-size: 18px;
+}
+
+h5
+{
+    font-size: 16px;
+}
+
+h6
+{
+    font-size: 14px;
+}
+
 p, ol, ul 
 {
 	margin-top: 0px;
@@ -43,5 +58,41 @@ p, ol
 	font-size: 14px;
 }
 
-strong {
+strong 
+{
+    
+}
+
+.esteticaNameBig 
+{
+    font-family: Vivaldi;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    color: #85200e;
+}
+
+.esteticaNameLogoHeader 
+{
+    font-family: Arial;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    color: #85200e;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+.esteticaNameLogo 
+{
+    
+    font-family: Vivaldi;
+    font-size: 80px;
+    text-align: left;
+    font-weight: bold;
+    color: #85200e;
+    vertical-align: text-bottom;
+    position: absolute;
+    top: 90px;
+    left: 0px;
 }

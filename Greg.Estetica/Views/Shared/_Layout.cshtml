@@ -1,66 +1,65 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
     <link href="../../Content/default.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../../Content/StyleExtension.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../../Content/layout.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-<div id="wrapper">
-	<div id="wrapper-bottom">
-		<div id="header" class="container">
-			<div id="logo">
-				<h1><a href="#">BusinessName.com</a></h1>
-				<p style="height: 50px">Lorem ipsum veroeros</p>
-			</div>
-			<div id="search">
-				<form method="get" action="">
-					<fieldset>
-						<input type="text" name="query" value="" class="input-text" />
-					</fieldset>
-				</form>
-			</div>
-		</div>
-		<div id="page" class="container">
-			<div id="content">
-				<div class="bgtop">
-					<div class="bgbtm">
-						<div id="bg1">
-							<div id="bg2">
-								<div id="bg3">
-                                    <div id="box1" class="box-style1">                                        
-                                        @RenderBody();
+    <div id="wrapper">
+        <div id="wrapper-bottom">
+            <div id="header" class="container">
+                @{Html.RenderPartial("../Home/Logo");}
+                <div id="search">
+                    <form method="get" action="">
+                    <fieldset>
+                        <input type="text" name="query" value="" class="input-text" />
+                    </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div id="page" class="container">
+                <div id="content">
+                    <div class="bgtop">
+                        <div class="bgbtm">
+                            <div id="bg1">
+                                <div id="bg2">
+                                    <div id="bg3">
+                                        <div id="box1" class="box-style1">
+                                            @RenderBody();
+                                        </div>
                                     </div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="sidebar">
-				@{Html.RenderPartial("../Home/Menu","Home");}
-				<div id="sidebox">
-					<div class="bgtop">
-						<div class="bgbtm">
-							<div class="box-style2">
-								<h2 class="title"><span>Promocje</span> i newsy</h2>
-								@{Html.RenderAction("Promotions", "Home");}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="footer">
-	<div class="container">
-		<p>Copyright (c) 2011 WebsiteName.com. All rights reserved.</p>
-	</div>
-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar">
+                    @{Html.RenderPartial("../Home/Menu", "Home");}
+                    <div id="sidebox">
+                        <div class="bgtop">
+                            <div class="bgbtm">
+                                <div class="box-style2">
+                                    <h2 class="title">
+                                        <span>Promocje</span> i newsy</h2>
+                                    @{Html.RenderAction("Promotions", "Home");}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <p>
+                Copyright (c) 2011 WebsiteName.com. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
