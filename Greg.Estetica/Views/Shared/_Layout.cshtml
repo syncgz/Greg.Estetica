@@ -13,12 +13,17 @@
     <div id="wrapper">
         <div id="wrapper-bottom">
             <div id="header" class="container">
-                @{Html.RenderPartial("../Home/Logo");}
+                <div id="logo">
+                    <div style="position: absolute;top: 80px">
+                        @{Html.RenderPartial("../Home/Logo");}
+                    </div>
+                    
+                </div>
                 <div id="search">
                     <form method="get" action="">
-                    <fieldset>
-                        <input type="text" name="query" value="" class="input-text" />
-                    </fieldset>
+                        <fieldset>
+                            <input type="text" name="query" value="" class="input-text" />
+                        </fieldset>
                     </form>
                 </div>
             </div>

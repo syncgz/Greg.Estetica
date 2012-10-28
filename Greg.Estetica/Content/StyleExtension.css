@@ -63,6 +63,9 @@ strong
     
 }
 
+/****/
+/** Logo **/
+/****/
 .esteticaNameBig 
 {
     font-family: Vivaldi;
@@ -79,9 +82,7 @@ strong
     text-align: left;
     font-weight: bold;
     color: #85200e;
-    position: absolute;
-    top: 70px;
-    left: 0px;
+    text-height: text-size;
 }
 .esteticaNameLogo 
 {
@@ -91,8 +92,83 @@ strong
     text-align: left;
     font-weight: bold;
     color: #85200e;
-    vertical-align: text-bottom;
-    position: absolute;
-    top: 90px;
-    left: 0px;
+    text-height: text-size;
+}
+
+/****/
+/** Menu **/
+/****/
+
+#menu 
+{
+	width: 294px;
+	height: 450px;
+	font-family: Century Gothic
+}
+
+#menu ul 
+{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li 
+{
+}
+
+#menu a 
+{
+	padding-right: 30px;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #3B1505;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+#menu a:hover 
+{
+	text-decoration: none;
+}
+
+#menu1
+{
+	height: 40px;
+	padding: 60px 0px 0px 0px;
+	background: url(../Images/homepage02.jpg) no-repeat left top;
+	text-align: right;
+}
+
+#menu2 
+{
+	height: 41px;
+	padding: 13px 0px 0px 0px;
+	background: url(../Images/homepage03.jpg) no-repeat left top;
+	text-align: right;
+}
+
+#menu3 
+{
+	height: 41px;
+	padding: 13px 0px 0px 0px;
+	background: url(../Images/homepage04.jpg) no-repeat left top;
+	text-align: right;
+}
+
+#menu4 
+{
+	height: 41px;
+	padding: 13px 0px 0px 0px;
+	background: url(../Images/homepage05.jpg) no-repeat left top;
+	text-align: right;
+}
+
+#menu5 
+{
+	height: 82px;
+	padding: 14px 0px 0px 0px;
+	background: url(../Images/homepage06.jpg) no-repeat left top;
+	text-align: right;
 }

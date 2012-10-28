@@ -1,15 +1,10 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<p style="text-align: center;">
-    <strong>
-        <h3 style="text-align: center">
-            <span>Salon kosmetyczny </span>
-        </h3>
-    </strong>
-    <p class="esteticaNameBig">
-        Estetica</p>
-</p>
+<div style="horiz-align: center; width: 250px; margin-left: auto; margin-right: auto;
+    height: 170px">
+    @{Html.RenderPartial("Logo");}
+</div>
 <p style="text-align: center;">
     <span><strong>ul. Raciborska 3 (nad apteką całodobową)</strong></span><br />
     <span><strong>44-200 Rybnik</strong> </span>
@@ -21,15 +16,20 @@
 </p>
 <p style="text-align: center;">
     <span>godziny otwarcia :</span></p>
-<span>
-    <span>
-        <p style="text-align: center;">
-            <span>pon-pt: <strong>9.00-18.00</strong></span></p>
-        <p style="text-align: center;">
-            <span>soboty: <strong>8.00-14.00</strong> </span>
-        </p>
-        <p style="text-align: center;">
-            <span>Możliwość umówienia w innych godzinach</span></p>
-    </span>
-</span>
-<p style="height: 200px"></p>
+<span><span>
+    <p style="text-align: center;">
+        <span>pon-pt: <strong>9.00-18.00</strong></span></p>
+    <p style="text-align: center;">
+        <span>soboty: <strong>8.00-14.00</strong> </span>
+    </p>
+    <p style="text-align: center;">
+        <span><strong>Możliwość umówienia w innych godzinach</strong></span></p>
+</span></span>
+
+<iframe width="580" height="450" frameborder="0" scrolling="no" marginheight="0"
+    marginwidth="0" src="http://maps.google.pl/maps/ms?hl=pl&amp;ie=UTF8&amp;msa=0&amp;msid=102043821195884412537.00049436de8b85d1c817d&amp;ll=50.097005,18.541403&amp;spn=0.006194,0.01178&amp;z=16&amp;iwloc=00049436de8d6ed670a9f&amp;output=embed">
+</iframe>
+<br />
+<small>Pokaż <a href="http://maps.google.pl/maps/ms?hl=pl&amp;ie=UTF8&amp;msa=0&amp;msid=102043821195884412537.00049436de8b85d1c817d&amp;ll=50.097005,18.541403&amp;spn=0.006194,0.01178&amp;z=16&amp;iwloc=00049436de8d6ed670a9f&amp;source=embed"
+    style="color: #0000FF; text-align: left">Salon kosmetyczny Estetica</a> na większej
+    mapie</small> 
