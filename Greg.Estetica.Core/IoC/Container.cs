@@ -1,21 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Greg.Estetica.Core.Interfaces;
 using Greg.Estetica.Core.Model;
 using Moq;
 using Ninject;
 
-namespace Greg.Estetica.Ioc
+namespace Greg.Estetica.Core.IoC
 {
     public class Container
     {
-        private static IKernel _kernel = new StandardKernel();
+        private static IKernel _kernel;
+
+        public static object ResolveType(Type type)
+        {
+            if(_kernel == null)
+            {
+                ContainerInitialization();
+            }
+
+            return _kernel.Get(type);
+        }
 
         public static T ResolveType<T>()
         {
-            if(_kernel == null)
+            if (_kernel == null)
             {
                 ContainerInitialization();
             }

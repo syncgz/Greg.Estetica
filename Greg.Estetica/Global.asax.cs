@@ -25,7 +25,7 @@ namespace Greg.Estetica
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
 
-            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
+            ControllerBuilder.Current.SetControllerFactory(new CustomControllerFactory());
         }
     }
 }
