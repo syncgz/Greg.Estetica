@@ -8,22 +8,40 @@
     <link href="../../Content/default.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../../Content/StyleExtension.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../../Content/layout.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../Content/FacebookSliderStyle.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
+    <div id="fb-root">
+    </div>
+    <script>        (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+} (document, 'script', 'facebook-jssdk'));</script>
+
+<div id="like-box">
+	<div class="outside">
+		<div class="inside">
+			<div class="fb-like-box" data-href="http://www.facebook.com/platform" data-width="292" data-height="400" data-show-faces="true" data-stream="true" data-header="true"></div>
+		</div>
+	</div>
+	<div class="belt">facebook</div>
+</div>
     <div id="wrapper">
         <div id="wrapper-bottom">
             <div id="header" class="container">
                 <div id="logo">
-                    <div style="position: absolute;top: 80px">
+                    <div style="position: absolute; top: 80px">
                         @{Html.RenderPartial("../Home/Logo");}
                     </div>
-                    
                 </div>
                 <div id="search">
                     <form method="get" action="">
-                        <fieldset>
-                            <input type="text" name="query" value="" class="input-text" />
-                        </fieldset>
+                    <fieldset>
+                        <input type="text" name="query" value="" class="input-text" />
+                    </fieldset>
                     </form>
                 </div>
             </div>

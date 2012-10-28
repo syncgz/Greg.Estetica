@@ -172,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\default.css" />
+    <Content Include="Content\FacebookSliderStyle.css" />
     <Content Include="Content\ie6fix.css" />
     <Content Include="Content\layout.css" />
     <Content Include="Content\StyleExtension.css" />
