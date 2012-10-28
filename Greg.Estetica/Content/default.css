@@ -15,20 +15,11 @@ body {
 	letter-spacing: -1px;
 }
 
-h1, h2, h3 {
+/**h1, h2, h3 {
 	margin-top: 0px;
-}
+}*/
 
-p, ol, ul {
-	margin-top: 0px;
-}
 
-p, ol {
-	line-height: 140%;
-}
-
-strong {
-}
 
 a {
 	color: #D45718;

@@ -19,14 +19,57 @@ namespace Greg.Estetica.Controllers
             _promotionRepository = promotionRepository;
         }
 
+        #region Views
+
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Promotions()
+        public ActionResult Ofert()
+        {
+            return View();
+        }
+
+        public ActionResult PriceList()
+        {
+            return View();
+        }
+
+        public ActionResult Selling()
+        {
+            return View();
+        }
+
+        public ActionResult Gallery()
+        {
+            return View();
+        }
+
+        public ActionResult Promotion()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        #endregion
+
+        #region Partials View
+
+        public PartialViewResult Promotions()
         {
             return PartialView(new Promotion(_promotionRepository.GetPromotionList()));
         }
+
+        public PartialViewResult Menu()
+        {
+            return PartialView();
+        }
+
+        #endregion
     }
 }
