@@ -274,6 +274,7 @@
     <Content Include="Images\Promotions\PromoBaseBcg50.gif" />
     <Content Include="Images\Promotions\PromotionBaseBackground.gif" />
     <Content Include="Images\spacer.gif" />
+    <Content Include="Scripts\Custom\PromotionsAction.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -320,6 +321,8 @@
     <Content Include="Views\Home\Promotion.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Logo.cshtml" />
+    <Content Include="Views\Home\Sidebar.cshtml" />
+    <Content Include="Views\Home\Sidebox.cshtml" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Mvc.resources.dll" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Http.WebHost.resources.dll" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Http.SelfHost.resources.dll" />

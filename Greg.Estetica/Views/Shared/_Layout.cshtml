@@ -8,27 +8,42 @@
     <link href="../../Content/default.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../../Content/StyleExtension.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../../Content/layout.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../../Content/FacebookSliderStyle.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../Content/FacebookSliderStyle.css" rel="stylesheet" type="text/css"
+        media="all" />
+    
+    <script src="../../Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/Custom/PromotionsAction.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            Initialization();
+            self.setInterval(DisplayPromotions, 5000);
+        });
+        
+//        self.setInterval(DisplayPromotions, 5000);
+    </script>
 </head>
 <body>
+    @RenderSection("SCRIPT_SECTION", false);
     <div id="fb-root">
     </div>
     <script>        (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-} (document, 'script', 'facebook-jssdk'));</script>
-
-<div id="like-box">
-	<div class="outside">
-		<div class="inside">
-			<div class="fb-like-box" data-href="http://www.facebook.com/platform" data-width="292" data-height="400" data-show-faces="true" data-stream="true" data-header="true"></div>
-		</div>
-	</div>
-	<div class="belt">facebook</div>
-</div>
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));</script>
+    <div id="like-box">
+        <div class="outside">
+            <div class="inside">
+                <div class="fb-like-box" data-href="http://www.facebook.com/platform" data-width="292"
+                    data-height="400" data-show-faces="true" data-stream="true" data-header="true">
+                </div>
+            </div>
+        </div>
+        <div class="belt">
+            facebook</div>
+    </div>
     <div id="wrapper">
         <div id="wrapper-bottom">
             <div id="header" class="container">
@@ -61,20 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sidebar">
-                    @{Html.RenderPartial("../Home/Menu", "Home");}
-                    <div id="sidebox">
-                        <div class="bgtop">
-                            <div class="bgbtm">
-                                <div class="box-style2">
-                                    <h2 class="title">
-                                        <span>Promocje</span> i newsy</h2>
-                                    @{Html.RenderAction("Promotions", "Home");}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @{Html.RenderPartial("../Home/Sidebar");}
             </div>
         </div>
     </div>

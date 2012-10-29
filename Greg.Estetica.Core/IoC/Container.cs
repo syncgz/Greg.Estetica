@@ -55,7 +55,10 @@ namespace Greg.Estetica.Core.IoC
                             new PromotionItem()
                             {Description = "Promocja na zele", ImagePath = "Images/Promotions/PromotionBaseBackground.gif", Link = new Uri("http://www.wp.pl"), Title = "Title"},
                             new PromotionItem()
-                            {Description = "Uruchomienie nowej strony internetowej.", ImagePath = "Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Title"}
+                            {Description = "Uruchomienie nowej strony internetowej.", ImagePath = "Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Title"},
+                            new PromotionItem()
+                            {Description = "1111.", ImagePath = "Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Title"}
+
                     });
 
             _kernel.Bind<IPromotionRepository>().ToConstant(mock.Object);
