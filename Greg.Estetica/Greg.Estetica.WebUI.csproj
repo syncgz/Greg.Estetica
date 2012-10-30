@@ -274,6 +274,7 @@
     <Content Include="Images\Promotions\PromoBaseBcg50.gif" />
     <Content Include="Images\Promotions\PromotionBaseBackground.gif" />
     <Content Include="Images\spacer.gif" />
+    <Content Include="Scripts\Custom\MenuItemSelection.js" />
     <Content Include="Scripts\Custom\PromotionsAction.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
