@@ -223,7 +223,9 @@ hr {
 /** BOX STYLE 2 */
 
 
-.box-style2 {
+.box-style2 
+{
+	height: 395px;
 }
 
 .box-style2 .title {

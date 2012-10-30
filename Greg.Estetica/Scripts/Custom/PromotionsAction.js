@@ -16,7 +16,7 @@ function DisplayPromotions()
 
     if (allElements.length > windowSize) 
     {
-        allElements.hide();  
+        allElements.css("display","none");  
 
         if (visibleElements != 0)  
         {
@@ -43,7 +43,7 @@ function HideItem(element)
 
 function ShowItem(element) 
 {
-    element.style.display = "inline";
+    element.style.display = "block";
 }
 
 function CalculateIndex(index) 
