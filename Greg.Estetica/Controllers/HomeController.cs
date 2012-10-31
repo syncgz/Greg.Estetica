@@ -12,12 +12,20 @@ namespace Greg.Estetica.Controllers
 {
     public class HomeController : Controller
     {
+        #region Variables
+
         private IPromotionRepository _promotionRepository;
+
+        #endregion
+
+        #region Constructors
 
         public HomeController(IPromotionRepository promotionRepository)
         {
             _promotionRepository = promotionRepository;
         }
+
+        #endregion
 
         #region Views
 
@@ -60,39 +68,40 @@ namespace Greg.Estetica.Controllers
 
         #region Partials View
 
-        public PartialViewResult IndexPartial()
+        public ActionResult IndexPartial()
         {
-            return PartialView("Index");
+            //return PartialView("Index");
+            return AjaxWrapper("Index");
         }
 
         public ActionResult OfertPartial()
         {
-            return PartialView("Ofert");
+            return AjaxWrapper("Ofert");
         }
 
         public ActionResult PriceListPartial()
         {
-            return PartialView("PriceList");
+            return AjaxWrapper("PriceList");
         }
 
         public ActionResult SellingPartial()
         {
-            return PartialView("Selling");
+            return AjaxWrapper("Selling");
         }
 
         public ActionResult GalleryPartial()
         {
-            return PartialView("Gallery");
+            return AjaxWrapper("Gallery");
         }
 
         public ActionResult PromotionPartial()
         {
-            return PartialView("Promotion");
+            return AjaxWrapper("Promotion");
         }
 
         public ActionResult ContactPartial()
         {
-            return PartialView("Contact");
+            return AjaxWrapper("Contact");
         }
 
         public PartialViewResult Promotions()
@@ -103,6 +112,20 @@ namespace Greg.Estetica.Controllers
         public PartialViewResult Menu()
         {
             return PartialView();
+        }
+
+        #endregion
+
+        #region Helpers
+
+        private ActionResult AjaxWrapper(string action,string controller = "")
+        {
+            if(Request.IsAjaxRequest())
+            {
+                return PartialView(action);
+            }
+
+            return View(action);
         }
 
         #endregion
