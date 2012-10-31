@@ -125,26 +125,24 @@ strong
 	text-shadow: 2px 2px 2px #3B1505;
 	text-transform: uppercase;
 	font-size: 25px;
-	color: #FFFFFF;
+	color: darkgrey;
 }
 
 #menu a:hover 
 {
 	text-decoration: mediumorchid;
-	color: darkred;
-	font-weight: bold;
+	color: white;
 	text-shadow: 2px 2px 2px #3B1505;
-	font-size: 30px;
+	font-size: 27px;
 	
 }
 
-test 
+.test 
 {
 	text-decoration: mediumorchid;
-	color: darkred;
-	font-weight: bold;
+	color: white;
 	text-shadow: 2px 2px 2px #3B1505;
-	font-size: 30px;
+	font-size: 27px;
 }
 
 #menu1

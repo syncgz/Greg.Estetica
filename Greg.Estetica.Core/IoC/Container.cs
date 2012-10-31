@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Web.Mvc;
 using Greg.Estetica.Core.Interfaces;
 using Greg.Estetica.Core.Model;
 using Moq;
@@ -48,17 +49,16 @@ namespace Greg.Estetica.Core.IoC
                             new PromotionItem()
                                 {
                                     Description = "Promocja na paznokcie.", 
-                                    ImagePath = "images/picture4.gif", 
+                                    ImagePath = "~/images/picture4.gif", 
                                     Link = new Uri("http://www.wp.pl"), 
-                                    Title = "Title"
+                                    Title = "Promocja A"
                                 },
                             new PromotionItem()
-                            {Description = "Promocja na zele", ImagePath = "Images/Promotions/PromotionBaseBackground.gif", Link = new Uri("http://www.wp.pl"), Title = "Title"},
+                            {Description = "Promocja na zele", ImagePath ="~/Images/Promotions/PromotionBaseBackground.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja B"},
                             new PromotionItem()
-                            {Description = "Uruchomienie nowej strony internetowej.", ImagePath = "Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Title"},
+                            {Description = "Uruchomienie nowej strony internetowej.", ImagePath = "~/Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja C"},
                             new PromotionItem()
-                            {Description = "1111.", ImagePath = "Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Title"}
-
+                            {Description = "1111.", ImagePath = "~/Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja D"}
                     });
 
             _kernel.Bind<IPromotionRepository>().ToConstant(mock.Object);

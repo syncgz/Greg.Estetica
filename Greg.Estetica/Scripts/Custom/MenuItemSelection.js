@@ -1,9 +1,16 @@
 ﻿
 var menuSelector = 'menu_item';
 
+function RegisterMenuEvents() {
+
+    $('#menu>ul>li>a').click(function () {
+        SelectItem($(this));
+    });
+}
+
 function SelectItem(item) 
 {
-    $('menu>ul>li>a').removeData(menuSelector);
+    $('#menu>ul>li>a').removeData(menuSelector);
 
     $(item).data(menuSelector, '1');
 
@@ -13,19 +20,11 @@ function SelectItem(item)
 
 function UpdateMenu() 
 {
-    $('menu>ul>li>a').removeClass().each(function () 
+    $('#menu>ul>li>a').removeClass().each(function () 
     {
         if ($(this).data(menuSelector) == '1') 
         {
             $(this).addClass('test');
         }
-    });
-}
-
-function RegisterMenuEvents() 
-{
-    $('menu>ul>li>a').click(function () 
-    {
-        SelectItem($(this));
     });
 }

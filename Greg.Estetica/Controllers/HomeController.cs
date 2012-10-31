@@ -60,6 +60,41 @@ namespace Greg.Estetica.Controllers
 
         #region Partials View
 
+        public PartialViewResult IndexPartial()
+        {
+            return PartialView("Index");
+        }
+
+        public ActionResult OfertPartial()
+        {
+            return PartialView("Ofert");
+        }
+
+        public ActionResult PriceListPartial()
+        {
+            return PartialView("PriceList");
+        }
+
+        public ActionResult SellingPartial()
+        {
+            return PartialView("Selling");
+        }
+
+        public ActionResult GalleryPartial()
+        {
+            return PartialView("Gallery");
+        }
+
+        public ActionResult PromotionPartial()
+        {
+            return PartialView("Promotion");
+        }
+
+        public ActionResult ContactPartial()
+        {
+            return PartialView("Contact");
+        }
+
         public PartialViewResult Promotions()
         {
             return PartialView(new Promotion(_promotionRepository.GetPromotionList()));
