@@ -95,7 +95,7 @@ namespace Greg.Estetica.Controllers
 
         public ActionResult GalleryPartial()
         {
-            return AjaxWrapper("Gallery",_photoRepository.GetList());
+            return AjaxWrapper("Gallery",new Gallery(_photoRepository.GetPhotoList(),_photoRepository.GetThumbnailsList()));
         }
 
         public ActionResult PromotionPartial()

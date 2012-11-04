@@ -1,4 +1,4 @@
-﻿@model List<Greg.Estetica.Core.Model.Photo>
+﻿@model Greg.Estetica.Core.Model.Gallery
 
 @{
     int skipCount = 0;
@@ -10,11 +10,11 @@
     ViewBag.Title = "Gallery";
 }
 
-<div id="galleria">
+<div>
     <table class="gallery">
         @do
         {
-            var row = Model.Skip(skipCount).Take(rowCount);
+            var row = Model.Thumbnails.Skip(skipCount).Take(rowCount);
 
             count = row.Count();
 
@@ -22,7 +22,7 @@
                 @foreach (var rowItem in row)
                 {
                     <td class="galleryItem">
-                        <a href="http://www.wp.pl"> <img src="@Url.Content(rowItem.Path)" class="galleryItem" data-title="@rowItem.Title" data-description="@rowItem.Description"></a>
+                        <img src="@Url.Content(rowItem.Path)" class="galleryItem" data-title="@rowItem.Title" data-description="@rowItem.Description">
                     </td>
                 }
             </tr>
@@ -32,4 +32,19 @@
         } while (count > 0);
     </table>
 
+    <div id="dialog-modal">
+        <p>aaaaaaaaaaaaaaaaa</p>
+        @*<div id="galleria">
+            @foreach (var photo in Model.Photos)
+            {
+                <img src="@Url.Content(photo.Path)">
+            }
+        </div>
+        
+        <script>
+            Galleria.loadTheme('Content/galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('#galleria');
+        </script>*@
+
+    </div>
 </div>

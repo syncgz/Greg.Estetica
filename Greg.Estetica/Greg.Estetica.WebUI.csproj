@@ -184,6 +184,26 @@
   <ItemGroup>
     <Content Include="Content\default.css" />
     <Content Include="Content\FacebookSliderStyle.css" />
+    <Content Include="Content\galleria\galleria-1.2.8.js" />
+    <Content Include="Content\galleria\galleria-1.2.8.min.js" />
+    <Content Include="Content\galleria\plugins\flickr\flickr-demo.html" />
+    <Content Include="Content\galleria\plugins\flickr\flickr-loader.gif" />
+    <Content Include="Content\galleria\plugins\flickr\galleria.flickr.js" />
+    <Content Include="Content\galleria\plugins\flickr\galleria.flickr.min.js" />
+    <Content Include="Content\galleria\plugins\flickr\loader.gif" />
+    <Content Include="Content\galleria\plugins\history\galleria.history.js" />
+    <Content Include="Content\galleria\plugins\history\galleria.history.min.js" />
+    <Content Include="Content\galleria\plugins\history\history-demo.html" />
+    <Content Include="Content\galleria\plugins\picasa\galleria.picasa.js" />
+    <Content Include="Content\galleria\plugins\picasa\galleria.picasa.min.js" />
+    <Content Include="Content\galleria\plugins\picasa\loader.gif" />
+    <Content Include="Content\galleria\plugins\picasa\picasa-demo.html" />
+    <Content Include="Content\galleria\themes\classic\classic-demo.html" />
+    <Content Include="Content\galleria\themes\classic\classic-loader.gif" />
+    <Content Include="Content\galleria\themes\classic\classic-map.png" />
+    <Content Include="Content\galleria\themes\classic\galleria.classic.css" />
+    <Content Include="Content\galleria\themes\classic\galleria.classic.js" />
+    <Content Include="Content\galleria\themes\classic\galleria.classic.min.js" />
     <Content Include="Content\ie6fix.css" />
     <Content Include="Content\layout.css" />
     <Content Include="Content\StyleExtension.css" />
@@ -398,6 +418,7 @@
     <Content Include="Views\Home\Logo.cshtml" />
     <Content Include="Views\Home\Sidebar.cshtml" />
     <Content Include="Views\Home\Sidebox.cshtml" />
+    <Content Include="Content\galleria\LICENSE" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Mvc.resources.dll" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Http.WebHost.resources.dll" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Http.SelfHost.resources.dll" />

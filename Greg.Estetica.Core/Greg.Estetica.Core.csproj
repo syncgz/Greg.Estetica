@@ -55,6 +55,7 @@
     <Compile Include="Factories\CustomControllerFactory.cs" />
     <Compile Include="Interfaces\IContainerIoC.cs" />
     <Compile Include="Interfaces\IPromotionRepository.cs" />
+    <Compile Include="Model\Gallery.cs" />
     <Compile Include="Model\Photo.cs" />
     <Compile Include="Model\Promotion.cs" />
     <Compile Include="Model\PromotionItem.cs" />

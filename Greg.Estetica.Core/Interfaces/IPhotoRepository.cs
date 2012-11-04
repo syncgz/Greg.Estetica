@@ -8,6 +8,8 @@ namespace Greg.Estetica.Core.Interfaces
 {
     public interface IPhotoRepository
     {
-        List<Photo> GetList();
+        List<Photo> GetPhotoList();
+
+        List<Photo> GetThumbnailsList();
     }
 }

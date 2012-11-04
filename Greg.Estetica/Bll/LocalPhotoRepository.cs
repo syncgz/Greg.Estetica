@@ -10,14 +10,27 @@ using Greg.Estetica.Core.Model;
 
 namespace Greg.Estetica.WebUI.Bll
 {
-    public class LocalPhotoRepository:IPhotoRepository
+    public class LocalPhotoRepository : IPhotoRepository
     {
-        public List<Photo> GetList()
+        public List<Photo> GetPhotoList()
+        {
+#warning Replace by path from web.config
+            var path = HttpContext.Current.Server.MapPath("~/Images/Gallery/Photos");
+
+            return GetPhotos(path);
+        }
+
+        public List<Photo> GetThumbnailsList()
+        {
+#warning Replace by path from web.config
+            var path = HttpContext.Current.Server.MapPath("~/Images/Gallery/Thumbnails");
+
+            return GetPhotos(path);
+        }
+
+        private List<Photo> GetPhotos(string path)
         {
             List<Photo> list = new List<Photo>();
-
-            #warning Replace by path from web.config
-            var path = HttpContext.Current.Server.MapPath("~/Images/Gallery/Thumbnails");
 
             DirectoryInfo directory = new DirectoryInfo(path);
 
@@ -26,16 +39,15 @@ namespace Greg.Estetica.WebUI.Bll
             foreach (var photo in photoList)
             {
                 list.Add(new Photo()
-                    {
-                        Description = "",
-                        Path = Greg.Estetica.WebUI.Utils.Path.ConvertFromPhysicalToRelative(photo.FullName),
-                        Title = photo.Name
-                    });
+                {
+                    Description = "",
+                    Path = Greg.Estetica.WebUI.Utils.Path.ConvertFromPhysicalToRelative(photo.FullName),
+                    Title = photo.Name
+                });
             }
 
 
             return list;
-
         }
     }
 
