@@ -184,3 +184,29 @@ strong
 	background: url(../Images/homepage06.jpg) no-repeat left top;
 	text-align: right;
 }
+
+img.galleryItem 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+img.galleryItem:hover 
+{
+    border-style: groove;
+    border-width: 5px;
+    border-color: black;
+}
+
+table.gallery 
+{
+    width: 100%;
+}
+
+td.galleryItem 
+{
+    height: 140px;    
+}

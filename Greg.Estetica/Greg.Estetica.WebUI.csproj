@@ -40,6 +40,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Moq, Version=4.0.10827.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -165,6 +169,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Bll\CompositionRoot.cs" />
+    <Compile Include="Bll\LocalPhotoRepository.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -173,6 +179,7 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Path.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\default.css" />
@@ -252,6 +259,68 @@
     <Content Include="Images\bg3_04.jpg" />
     <Content Include="Images\bg3_05.jpg" />
     <Content Include="Images\bg3_06.jpg" />
+    <Content Include="Images\Gallery\Photos\100_0386.jpg" />
+    <Content Include="Images\Gallery\Photos\100_0557.jpg" />
+    <Content Include="Images\Gallery\Photos\100_0627.jpg" />
+    <Content Include="Images\Gallery\Photos\100_0636.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1284.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1344.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1370.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1374.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1469.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1470.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1574.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1576.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1605.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1630.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1639.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1682.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1690.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1701.jpg" />
+    <Content Include="Images\Gallery\Photos\100_1902.jpg" />
+    <Content Include="Images\Gallery\Photos\100_2298.jpg" />
+    <Content Include="Images\Gallery\Photos\100_2343.jpg" />
+    <Content Include="Images\Gallery\Photos\100_2347.jpg" />
+    <Content Include="Images\Gallery\Photos\100_2375.jpg" />
+    <Content Include="Images\Gallery\Photos\100_2381.jpg" />
+    <Content Include="Images\Gallery\Photos\100_2412.jpg" />
+    <Content Include="Images\Gallery\Photos\100_2442.jpg" />
+    <Content Include="Images\Gallery\Photos\100_2456.jpg" />
+    <Content Include="Images\Gallery\Photos\gabinet.jpg" />
+    <Content Include="Images\Gallery\Photos\IMGP1698.JPG" />
+    <Content Include="Images\Gallery\Photos\zmiana.jpg" />
+    <Content Include="Images\Gallery\Photos\zmiana1.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\19-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\20-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\21-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\22-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\23-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\24-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\25-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\26-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\27-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\28-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\29-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\30-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\31-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\32-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\33-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\34-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\35-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\36-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\37-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\38-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\39-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\40-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\41-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\42-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\43-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\44-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\45-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\46-2.JPG" />
+    <Content Include="Images\Gallery\Thumbnails\47-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\48-2.jpg" />
+    <Content Include="Images\Gallery\Thumbnails\49-2.jpg" />
     <Content Include="Images\homepage01.jpg" />
     <Content Include="Images\homepage02.jpg" />
     <Content Include="Images\homepage03.jpg" />

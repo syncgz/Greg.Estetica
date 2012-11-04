@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Greg.Estetica.Core.Factories;
+using Greg.Estetica.WebUI.Bll;
 
 namespace Greg.Estetica
 {
@@ -17,6 +18,8 @@ namespace Greg.Estetica
     {
         protected void Application_Start()
         {
+            CompositionRoot.Composite();
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);

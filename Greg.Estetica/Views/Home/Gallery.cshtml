@@ -1,6 +1,35 @@
-﻿@{
+﻿@model List<Greg.Estetica.Core.Model.Photo>
+
+@{
+    int skipCount = 0;
+
+    int rowCount = 3;
+
+    int count = 0;
+
     ViewBag.Title = "Gallery";
 }
 
-<h2>Gallery</h2>
-<p style="height: 700px"></p>
+<div id="galleria">
+    <table class="gallery">
+        @do
+        {
+            var row = Model.Skip(skipCount).Take(rowCount);
+
+            count = row.Count();
+
+            <tr>
+                @foreach (var rowItem in row)
+                {
+                    <td class="galleryItem">
+                        <a href="http://www.wp.pl"> <img src="@Url.Content(rowItem.Path)" class="galleryItem" data-title="@rowItem.Title" data-description="@rowItem.Description"></a>
+                    </td>
+                }
+            </tr>
+
+                skipCount += rowCount;
+
+        } while (count > 0);
+    </table>
+
+</div>

@@ -16,13 +16,17 @@ namespace Greg.Estetica.Controllers
 
         private IPromotionRepository _promotionRepository;
 
+        private IPhotoRepository _photoRepository;
+
         #endregion
 
         #region Constructors
 
-        public HomeController(IPromotionRepository promotionRepository)
+        public HomeController(IPromotionRepository promotionRepository,IPhotoRepository photoRepository)
         {
             _promotionRepository = promotionRepository;
+
+            _photoRepository = photoRepository;
         }
 
         #endregion
@@ -91,7 +95,7 @@ namespace Greg.Estetica.Controllers
 
         public ActionResult GalleryPartial()
         {
-            return AjaxWrapper("Gallery");
+            return AjaxWrapper("Gallery",_photoRepository.GetList());
         }
 
         public ActionResult PromotionPartial()
@@ -126,6 +130,16 @@ namespace Greg.Estetica.Controllers
             }
 
             return View(action);
+        }
+
+        private ActionResult AjaxWrapper(string action,object parameter)
+        {
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView(action,parameter);
+            }
+
+            return View(action,parameter);
         }
 
         #endregion

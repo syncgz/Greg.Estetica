@@ -39,29 +39,22 @@ namespace Greg.Estetica.Core.IoC
             CompositionRoot();
         }
 
+        public static void RegisterType<T>(T obj)
+        {
+            if(_kernel == null)
+            {
+                ContainerInitialization();
+            }
+
+            _kernel.Bind<T>().ToConstant(obj);
+        }
+
+
+
+
         private static void CompositionRoot()
         {
-            Mock<IPromotionRepository> mock = new Mock<IPromotionRepository>();
-
-            mock.Setup(x => x.GetPromotionList()).Returns(
-                new List<PromotionItem>()
-                    {
-                            new PromotionItem()
-                                {
-                                    Description = "Promocja na paznokcie.", 
-                                    ImagePath = "~/images/picture4.gif", 
-                                    Link = new Uri("http://www.wp.pl"), 
-                                    Title = "Promocja A"
-                                },
-                            new PromotionItem()
-                            {Description = "Promocja na zele", ImagePath ="~/Images/Promotions/PromotionBaseBackground.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja B"},
-                            new PromotionItem()
-                            {Description = "Uruchomienie nowej strony internetowej.", ImagePath = "~/Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja C"},
-                            new PromotionItem()
-                            {Description = "1111.", ImagePath = "~/Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja D"}
-                    });
-
-            _kernel.Bind<IPromotionRepository>().ToConstant(mock.Object);
+            
         }
     }
 }
