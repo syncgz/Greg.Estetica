@@ -46,10 +46,10 @@ function ShowPhotoDialog() {
     $(".ui-corner-all").css("background-color", "black");
     $(".ui-resizable-n").css("background-image", "none");
     
-    //$("#dialog-modal").position({
-    //    my: "center",
-    //    at: "center",
-    //    of: window
-    //});
+    $("#dialog-modal").position({
+        my: "center",
+        at: "center",
+        of: "body"
+    });
 };
 
