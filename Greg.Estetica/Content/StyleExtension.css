@@ -210,3 +210,13 @@ td.galleryItem
 {
     height: 140px;    
 }
+
+.photoDialog 
+{
+	background-color: black;	
+}
+
+.ui-dialog,.ui-dialog,.ui-widget, .ui-widget-content, .ui-corner-all, .foo, .ui-draggable, .ui-resizable 
+{
+	background: black !important;
+}​

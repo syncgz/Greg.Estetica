@@ -32,9 +32,8 @@
         } while (count > 0);
     </table>
 
-    <div id="dialog-modal">
-        <p>aaaaaaaaaaaaaaaaa</p>
-        @*<div id="galleria">
+    <div id="dialog-modal" class="photoDialog">
+        <div id="galleria">
             @foreach (var photo in Model.Photos)
             {
                 <img src="@Url.Content(photo.Path)">
@@ -44,7 +43,7 @@
         <script>
             Galleria.loadTheme('Content/galleria/themes/classic/galleria.classic.min.js');
             Galleria.run('#galleria');
-        </script>*@
+        </script>
 
     </div>
 </div>
