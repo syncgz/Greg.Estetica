@@ -6,6 +6,11 @@ var index3 = 2;
 
 var allElements;
 
+$(document).ready(function () {
+    Initialization();
+    self.setInterval(DisplayPromotions, 5000);
+});
+
 function DisplayPromotions() 
 {
     allElements = $(".style1 > li");
