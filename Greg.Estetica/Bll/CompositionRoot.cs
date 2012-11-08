@@ -88,25 +88,25 @@ namespace Greg.Estetica.WebUI.Bll
                                         GroupName = "Pielęgnacja dłoni",
                                         PriceList = new List<PriceGroupListItem>()
                                             {
-                                                new PriceGroupListItem(){Description = "Paznokcie żelowe (przedłużane na szablonie) IBN/ESN",Price = "130",Order = 1},
-                                                new PriceGroupListItem(){Description = "Żel na naturalną płytkę",Price = "100",Order = 1},
-                                                new PriceGroupListItem(){Description = "Duża korekta",Price = "od 100",Order = 1},
-                                                new PriceGroupListItem(){Description = "Mała korekta",Price = "od 45",Order = 1},
-                                                new PriceGroupListItem(){Description = "Mała korekta + kolorowy żel",Price = "55",Order = 1},
-                                                new PriceGroupListItem(){Description = "Paznokcie żelowe (przedłużane na szablonie) ORANGE NAILS",Price = "90",Order = 1},
-                                                new PriceGroupListItem(){Description = "Żel na naturalną płytkę",Price = "70",Order = 1},
-                                                new PriceGroupListItem(){Description = "Duża korekta",Price = "80",Order = 1},
-                                                new PriceGroupListItem(){Description = "Mała korekta",Price = "35",Order = 1},
-                                                new PriceGroupListItem(){Description = "Mała korekta + kolorowy żel",Price = "45",Order = 1},
-                                                new PriceGroupListItem(){Description = "Naprawa 1 paznokcia",Price = "10",Order = 1},
-                                                new PriceGroupListItem(){Description = "Ściągnięcie żelu",Price = "40",Order = 1},
-                                                new PriceGroupListItem(){Description = "Manicure",Price = "30",Order = 1},
-                                                new PriceGroupListItem(){Description = "Malowanie paznokci (1 kolor)",Price = "15",Order = 1},
-                                                new PriceGroupListItem(){Description = "Malowanie paznokci French",Price = "20",Order = 1},
-                                                new PriceGroupListItem(){Description = "Zdobienie",Price = "od 1",Order = 1},
-                                                new PriceGroupListItem(){Description = "Manicure hybrydowy",Price = "60",Order = 1},
-                                                new PriceGroupListItem(){Description = "Ściągnięcie hybrydy",Price = "20",Order = 1},
-                                                new PriceGroupListItem(){Description = "Parafina (zabieg odżywczy na dłonie)",Price = "40",Order = 1}
+                                                new PriceGroupListItem(){Description = "Paznokcie żelowe (przedłużane na szablonie) IBN/ESN",Price = "130,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Żel na naturalną płytkę",Price = "100,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Duża korekta",Price = "od 100,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Mała korekta",Price = "od 45,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Mała korekta + kolorowy żel",Price = "55,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Paznokcie żelowe (przedłużane na szablonie) ORANGE NAILS",Price = "90,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Żel na naturalną płytkę",Price = "70,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Duża korekta",Price = "80,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Mała korekta",Price = "35,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Mała korekta + kolorowy żel",Price = "45,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Naprawa 1 paznokcia",Price = "10,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Ściągnięcie żelu",Price = "40,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Manicure",Price = "30,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Malowanie paznokci (1 kolor)",Price = "15,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Malowanie paznokci French",Price = "20,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Zdobienie",Price = "od 1,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Manicure hybrydowy",Price = "60,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Ściągnięcie hybrydy",Price = "20,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Parafina (zabieg odżywczy na dłonie)",Price = "40,00",Order = 1}
                                                 
                                             }
                                     },
@@ -115,11 +115,11 @@ namespace Greg.Estetica.WebUI.Bll
                                         GroupName = "Pielęgnacja stóp",
                                         PriceList = new List<PriceGroupListItem>()
                                             {
-                                                new PriceGroupListItem(){Description = "Pedicure kosmetyczny",Price = "60",Order = 1},
-                                                new PriceGroupListItem(){Description = "Pedicure hybrydowy",Price = "70",Order = 1},
-                                                new PriceGroupListItem(){Description = "Żele u stóp ORANGE NAILS",Price = "70",Order = 1},
-                                                new PriceGroupListItem(){Description = "Żele u stóp IBD/ESN",Price = "100",Order = 1},
-                                                new PriceGroupListItem(){Description = "Pedicure przy żelowaniu paznokci i hybrydzie",Price = "40",Order = 1}
+                                                new PriceGroupListItem(){Description = "Pedicure kosmetyczny",Price = "60,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Pedicure hybrydowy",Price = "70,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Żele u stóp ORANGE NAILS",Price = "70,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Żele u stóp IBD/ESN",Price = "100,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Pedicure przy żelowaniu paznokci i hybrydzie",Price = "40,00",Order = 1}
                                             }
                                     },
                                     new PriceGroup()
@@ -127,14 +127,14 @@ namespace Greg.Estetica.WebUI.Bll
                                         GroupName = "Pielęgnacja twarzy i ciała",
                                         PriceList = new List<PriceGroupListItem>()
                                             {
-                                                new PriceGroupListItem(){Description = "Henna brwi",Price = "15",Order = 1},
-                                                new PriceGroupListItem(){Description = "Henna rzęs",Price = "15",Order = 1},
+                                                new PriceGroupListItem(){Description = "Henna brwi",Price = "15,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Henna rzęs",Price = "15,00",Order = 1},
                                                 new PriceGroupListItem(){Description = "Regulacja brwi",Price = "8,00 - 10,00",Order = 1},
-                                                new PriceGroupListItem(){Description = "Henna brwi + regulacja",Price = "20",Order = 1},
-                                                new PriceGroupListItem(){Description = "Henna brwi + rzęs + regulacja",Price = "30",Order = 1},
-                                                new PriceGroupListItem(){Description = "Przedłużanie rzęs metodą 1:1",Price = "150",Order = 1},
-                                                new PriceGroupListItem(){Description = "Korekta rzęs 1:1",Price = "100",Order = 1},
-                                                new PriceGroupListItem(){Description = "Ściąganie rzęs",Price = "20",Order = 1}
+                                                new PriceGroupListItem(){Description = "Henna brwi + regulacja",Price = "20,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Henna brwi + rzęs + regulacja",Price = "30,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Przedłużanie rzęs metodą 1:1",Price = "150,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Korekta rzęs 1:1",Price = "100,00",Order = 1},
+                                                new PriceGroupListItem(){Description = "Ściąganie rzęs",Price = "20,00",Order = 1}
                                             }
                                     },
                                     new PriceGroup()
@@ -150,13 +150,13 @@ namespace Greg.Estetica.WebUI.Bll
                                                 new PriceGroupListItem(){Description = "Mikrodermobrazja diamentowa +",Price = "",Order = 1},
                                                 new PriceGroupListItem(){Description = "Ekspresowy (peeling + ampułka)",Price = "",Order = 1},
                                                 new PriceGroupListItem(){Description = "Nawilżający dla skóry suchej i odwodnionej",Price = "",Order = 1},
-                                                new PriceGroupListItem(){Description = "",Price = "",Order = 1},
-                                                new PriceGroupListItem(){Description = "",Price = "",Order = 1},
-                                                new PriceGroupListItem(){Description = "",Price = "",Order = 1},
-                                                new PriceGroupListItem(){Description = "",Price = "",Order = 1},
-                                                new PriceGroupListItem(){Description = "",Price = "",Order = 1},
-                                                new PriceGroupListItem(){Description = "",Price = "",Order = 1},
-                                                new PriceGroupListItem(){Description = "",Price = "",Order = 1},
+                                                new PriceGroupListItem(){Description = "Obkuraczający ściany naczyń krwionośnych 'Rosacea'",Price = "",Order = 1},
+                                                new PriceGroupListItem(){Description = "Rozjaśniający przebarwienia z kwasem migdałowym 'Melanostatic'",Price = "",Order = 1},
+                                                new PriceGroupListItem(){Description = "Normalizujący pracę gruczołów łojowych dla skóry tłustej i mieszanej",Price = "",Order = 1},
+                                                new PriceGroupListItem(){Description = "Liftingująco - rewitalizujący dla skóry dojrzałej 'Neo-lift'",Price = "",Order = 1},
+                                                new PriceGroupListItem(){Description = "Nawilżający skórę wokół oczu 'Cudowne spojrzenie'",Price = "",Order = 1},
+                                                new PriceGroupListItem(){Description = "Regenerujący na szyję i dekolt",Price = "",Order = 1},
+                                                new PriceGroupListItem(){Description = "Masaż twarzy, szyi i dekoltu",Price = "",Order = 1},
                                                 new PriceGroupListItem(){Description = "",Price = "",Order = 1},
                                                 new PriceGroupListItem(){Description = "",Price = "",Order = 1},
                                                 new PriceGroupListItem(){Description = "",Price = "",Order = 1},

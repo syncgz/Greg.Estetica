@@ -278,10 +278,10 @@ table.priceListTable
 
 td.priceListTableLeft
 {
-	border-bottom: 1px solid brown;
-	border-top: 1px solid brown;
-	border-right: 1px solid brown;
-	border-left: 1px solid brown;
+	border-bottom: 2px solid brown;
+	border-top: 2px solid brown;
+	border-right: 2px solid brown;
+	border-left: 2px solid brown;
 	text-align: left;
 	height: 50px;
 	padding-left: 10px;
@@ -289,10 +289,10 @@ td.priceListTableLeft
 
 td.priceListTableRight
 {
-	border-bottom: 1px solid brown;
-	border-top: 1px solid brown;
-	border-right: 1px solid brown;
-	border-left: 1px solid brown;
+	border-bottom: 2px solid brown;
+	border-top: 2px solid brown;
+	border-right: 2px solid brown;
+	border-left: 2px solid brown;
 	text-align: center;
 	font-weight: bold;
 	height: 50px;
@@ -301,10 +301,10 @@ td.priceListTableRight
 
 th.priceListTable 
 {
-	border-bottom: 1px solid brown;
-	border-top: 1px solid brown;
-	border-right: 1px solid brown;
-	border-left: 1px solid brown;
+	border-bottom: 2px solid brown;
+	border-top: 2px solid brown;
+	border-right: 2px solid brown;
+	border-left: 2px solid brown;
 	text-align: center;
 	height: 50px;
 }
