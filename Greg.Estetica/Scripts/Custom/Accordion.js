@@ -1,4 +1,6 @@
-﻿function MenuAccordion()
+﻿function AccordionMenu()
 {
-    $("#priceListContainer").accordion();
+    $("#priceListContainer").accordion({
+        heightStyle: "fill"
+    });
 }

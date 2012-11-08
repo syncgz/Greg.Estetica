@@ -20,7 +20,7 @@ $(document).ready(function ()
                     GalleryMenu();
                     break;
                 case MENU_PRICE_LIST:
-                    MenuAccordion();
+                    AccordionMenu();
                     break;
             }
         });

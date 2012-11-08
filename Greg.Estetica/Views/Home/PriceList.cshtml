@@ -1,23 +1,30 @@
-﻿@{
+﻿@model Greg.Estetica.Core.Model.PriceList.PriceList
+
+@{
     ViewBag.Title = "PriceList";
 }
-
-<h2>PriceList</h2>
-<div id="priceListContainer">
-    <h3>Section 1</h3>
-    <div>
-        <p>A</p>
-    </div>
-    <h3>Section 1</h3>
-    <div>
-        <p>B</p>
-    </div>
-    <h3>Section 1</h3>
-    <div>
-        <p>C</p>
-    </div>
-    <h3>Section 1</h3>
-    <div>
-        <p>D</p>
-    </div>
+<div id="priceListContainer" class="contentContainer">
+    @foreach (var group in Model.PriceGroups)
+    {
+        <h3>@group.GroupName</h3>
+        <div>
+            <table class="priceListTable">
+                <tr >
+                    <th class="priceListTable">Zabieg</th>
+                    <th class="priceListTable">Cena</th>
+                </tr>
+                @foreach (var item in group.PriceList)
+                {
+                    <tr>
+                        <td class="priceListTableLeft">
+                            @item.Description
+                        </td>
+                        <td class="priceListTableRight">
+                            @item.Price
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    }
 </div>

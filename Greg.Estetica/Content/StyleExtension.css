@@ -256,7 +256,66 @@ td.galleryItem
 	background-color: black;	
 }
 
-/*#dialog-modal.ui-dialog,#dialog-modal.ui-dialog,#dialog-modal.ui-widget,#dialog-modal.ui-widget-content, #dialog-modal.ui-corner-all, #dialog-modal.foo, #dialog-modal.ui-draggable, #dialog-modal.ui-resizable 
+.contentContainer 
+{
+	height: 790px;
+	width: 100%;
+}
+
+.priceListTable 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #745654;
+	letter-spacing: -1px;
+}
+
+table.priceListTable 
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td.priceListTableLeft
+{
+	border-bottom: 1px solid brown;
+	border-top: 1px solid brown;
+	border-right: 1px solid brown;
+	border-left: 1px solid brown;
+	text-align: left;
+	height: 50px;
+	padding-left: 10px;
+}
+
+td.priceListTableRight
+{
+	border-bottom: 1px solid brown;
+	border-top: 1px solid brown;
+	border-right: 1px solid brown;
+	border-left: 1px solid brown;
+	text-align: center;
+	font-weight: bold;
+	height: 50px;
+	width: 100px;
+}
+
+th.priceListTable 
+{
+	border-bottom: 1px solid brown;
+	border-top: 1px solid brown;
+	border-right: 1px solid brown;
+	border-left: 1px solid brown;
+	text-align: center;
+	height: 50px;
+}
+
+tr.priceListTable 
+{
+	
+}
+
+.ui-dialog,.ui-dialog,#dialog-modal.ui-widget,#dialog-modal.ui-widget-content, #dialog-modal.ui-corner-all, #dialog-modal.foo, #dialog-modal.ui-draggable, #dialog-modal.ui-resizable 
 {
 	background: black !important;
-}​*/
+}​
+

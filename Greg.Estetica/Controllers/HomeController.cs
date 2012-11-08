@@ -18,15 +18,23 @@ namespace Greg.Estetica.Controllers
 
         private IPhotoRepository _photoRepository;
 
+        private IPriceListRepository _priceListRepository;
+
         #endregion
 
         #region Constructors
 
-        public HomeController(IPromotionRepository promotionRepository,IPhotoRepository photoRepository)
+        public HomeController(
+            IPromotionRepository promotionRepository,
+            IPhotoRepository photoRepository,
+            IPriceListRepository priceListRepository
+            )
         {
             _promotionRepository = promotionRepository;
 
             _photoRepository = photoRepository;
+
+            _priceListRepository = priceListRepository;
         }
 
         #endregion
@@ -85,7 +93,7 @@ namespace Greg.Estetica.Controllers
 
         public ActionResult PriceListPartial()
         {
-            return AjaxWrapper("PriceList");
+            return AjaxWrapper("PriceList",_priceListRepository.Get());
         }
 
         public ActionResult SellingPartial()

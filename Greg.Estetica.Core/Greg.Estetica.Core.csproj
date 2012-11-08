@@ -50,13 +50,17 @@
   <ItemGroup>
     <Compile Include="Enum\SectionName.cs" />
     <Compile Include="Interfaces\IPhotoRepository.cs" />
+    <Compile Include="Interfaces\IPriceListRepository.cs" />
     <Compile Include="IoC\Container.cs" />
     <Compile Include="Enum\ImageType.cs" />
     <Compile Include="Factories\CustomControllerFactory.cs" />
     <Compile Include="Interfaces\IContainerIoC.cs" />
     <Compile Include="Interfaces\IPromotionRepository.cs" />
     <Compile Include="Model\Gallery.cs" />
+    <Compile Include="Model\PriceList\PriceGroup.cs" />
     <Compile Include="Model\Photo.cs" />
+    <Compile Include="Model\PriceList\PriceGroupListItem.cs" />
+    <Compile Include="Model\PriceList\PriceList.cs" />
     <Compile Include="Model\Promotion.cs" />
     <Compile Include="Model\PromotionItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
