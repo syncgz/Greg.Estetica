@@ -1,4 +1,6 @@
-﻿$(document).ready(function ()
+﻿
+
+$(document).ready(function ()
 {
     
     
@@ -6,11 +8,21 @@
     {
         event.preventDefault();
         
+        var menuItemElement = event.target.id;
+
         var url = $(this).attr('href');
         
         $('#ajaxBlock').load(url, function ()
         {
-            GalleryMenu();
+            switch (menuItemElement)
+            {
+                case MENU_GALLERY:
+                    GalleryMenu();
+                    break;
+                case MENU_PRICE_LIST:
+                    MenuAccordion();
+                    break;
+            }
         });
         
         
@@ -24,18 +36,19 @@ function GalleryMenu(parameters)
 {
     $("img.galleryItem").bind('click', function (e)
     {
-        ShowPhotoDialog();
+        var index = $("img.galleryItem").index(this);
+
+        ShowPhotoDialog(index);
     });
 }
 
-function ShowPhotoDialog() {
-    
-    
+function ShowPhotoDialog(index) {
 
     $("#dialog-modal").dialog({
-        height: 'auto',
-        width:'auto',
-        dialogClass: "foo"
+        height: 600,
+        width: 1000,
+        dialogClass: "foo",
+        modal: true
     });
     
     $(".foo .ui-dialog-titlebar").css("display", "none");
@@ -46,10 +59,25 @@ function ShowPhotoDialog() {
     $(".ui-corner-all").css("background-color", "black");
     $(".ui-resizable-n").css("background-image", "none");
     
-    $("#dialog-modal").position({
-        my: "center",
-        at: "center",
-        of: "body"
-    });
+    //$("#dialog-modal").position({
+    //    my: "center",
+    //    at: "center",
+    //    of: "window"
+    //});
+    
+    var gallery = Galleria.get(0);
+
+    try 
+    {
+        gallery.show(index);
+    } 
+    catch(e) 
+    {
+        Galleria.configure({
+            show: index
+        });
+    } 
+
+    
 };
 

@@ -1,0 +1,4 @@
+﻿function MenuAccordion()
+{
+    $("#priceListContainer").accordion();
+}

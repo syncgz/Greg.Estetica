@@ -1,6 +1,8 @@
 ﻿
 var menuSelector = 'menu_item';
 
+var selectedImageIndex = 1;
+
 $(document).ready(function () {
     RegisterMenuEvents();
 });

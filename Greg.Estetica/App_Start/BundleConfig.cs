@@ -62,7 +62,8 @@ namespace Greg.Estetica
             bundles.Add(new ScriptBundle("~/bundles/galleria").Include("~/Content/galleria/galleria-1.2.8.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/customScripts").Include(
-                "~/Scripts/Custom/*.js"
+                "~/Scripts/Custom/*.js",
+                "~/Scripts/Custom/Enums/*.js"
                             ));
         }
     }

@@ -145,7 +145,7 @@ strong
 	font-size: 27px;
 }
 
-#menu1
+/*#menu1
 {
 	height: 40px;
 	padding: 60px 0px 0px 0px;
@@ -178,6 +178,46 @@ strong
 }
 
 #menu5 
+{
+	height: 82px;
+	padding: 14px 0px 0px 0px;
+	background: url(../Images/homepage06.jpg) no-repeat left top;
+	text-align: right;
+}*/
+
+.menuButton1 
+{
+	height: 40px;
+	padding: 60px 0px 0px 0px;
+	background: url(../Images/homepage02.jpg) no-repeat left top;
+	text-align: right;	
+}
+
+.menuButton2
+{
+	height: 41px;
+	padding: 13px 0px 0px 0px;
+	background: url(../Images/homepage03.jpg) no-repeat left top;
+	text-align: right;
+}
+
+.menuButton3 
+{
+	height: 41px;
+	padding: 13px 0px 0px 0px;
+	background: url(../Images/homepage04.jpg) no-repeat left top;
+	text-align: right;
+}
+
+.menuButton4 
+{
+	height: 41px;
+	padding: 13px 0px 0px 0px;
+	background: url(../Images/homepage05.jpg) no-repeat left top;
+	text-align: right;
+}
+
+.menuButton5 
 {
 	height: 82px;
 	padding: 14px 0px 0px 0px;
@@ -216,7 +256,7 @@ td.galleryItem
 	background-color: black;	
 }
 
-.ui-dialog,.ui-dialog,.ui-widget, .ui-widget-content, .ui-corner-all, .foo, .ui-draggable, .ui-resizable 
+/*#dialog-modal.ui-dialog,#dialog-modal.ui-dialog,#dialog-modal.ui-widget,#dialog-modal.ui-widget-content, #dialog-modal.ui-corner-all, #dialog-modal.foo, #dialog-modal.ui-draggable, #dialog-modal.ui-resizable 
 {
 	background: black !important;
-}​
+}​*/

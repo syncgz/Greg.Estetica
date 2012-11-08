@@ -1,11 +1,11 @@
 ﻿<div id="menu">
     <ul>
-        <li id="menu1">@Html.ActionLink("Home", "IndexPartial", "Home", new { accesskey = 1})</li>
-        <li id="menu2">@Html.ActionLink("Oferta", "OfertPartial", "Home", new { accesskey = 2})</li>
-        <li id="menu3">@Html.ActionLink("Cennik usług", "PriceListPartial", "Home", new { accesskey = 3})</li>
-        <li id="menu4">@Html.ActionLink("Kosmetyki", "SellingPartial", "Home", new { accesskey = 4})</li>
-        <li id="menu4">@Html.ActionLink("Galeria", "GalleryPartial", "Home", new { accesskey = 5})</li>
-        <li id="menu4">@Html.ActionLink("Promocje", "PromotionPartial", "Home", new { accesskey = 6})</li>
-        <li id="menu5">@Html.ActionLink("Kontakt", "ContactPartial", "Home", new { accesskey = 7})</li>
+        <li id="menuHome" class="menuButton1">@Html.ActionLink("Home", "IndexPartial", "Home", new { accesskey = 1,id="menuHomeLink"})</li>
+        <li id="menuOffer" class="menuButton2">@Html.ActionLink("Oferta", "OfertPartial", "Home", new { accesskey = 2,id="menuOfferLink"})</li>
+        <li id="menuPriceList" class="menuButton3">@Html.ActionLink("Cennik usług", "PriceListPartial", "Home", new { accesskey = 3,id="menuPriceListLink"})</li>
+        <li id="menuDetailSale" class="menuButton4">@Html.ActionLink("Kosmetyki", "SellingPartial", "Home", new { accesskey = 4,id="menuDetailSaleLink"})</li>
+        <li id="menuGallery" class="menuButton4">@Html.ActionLink("Galeria", "GalleryPartial", "Home", new { accesskey = 5,id="menuGalleryLink"})</li>
+        <li id="menuPromotions" class="menuButton4">@Html.ActionLink("Promocje", "PromotionPartial", "Home", new { accesskey = 6,id="menuPromotionsLink"})</li>
+        <li id="menuContacts" class="menuButton5">@Html.ActionLink("Kontakt", "ContactPartial", "Home", new { accesskey = 7,id="menuContactsLink"})</li>
     </ul>
 </div>
