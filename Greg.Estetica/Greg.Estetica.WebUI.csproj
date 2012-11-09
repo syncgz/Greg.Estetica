@@ -485,6 +485,7 @@
     <Content Include="Images\Promotions\PromotionBaseBackground.gif" />
     <Content Include="Images\spacer.gif" />
     <Content Include="Scripts\Custom\Accordion.js" />
+    <Content Include="Scripts\Custom\Gallery.js" />
     <Content Include="Scripts\Custom\Enums\MenuItemEnum.js" />
     <Content Include="Scripts\Custom\MenuAjax.js" />
     <Content Include="Scripts\Custom\MenuItemSelection.js" />

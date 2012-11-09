@@ -33,18 +33,12 @@
     </table>
 </div>
 
-<div id="dialog-modal" class="photoDialog">
+<div id="dialog-modal" class="photoDialog" hidden="true">
     <div id="galleria">
         @foreach (var photo in Model.Photos)
         {
             <img src="@Url.Content(photo.Path)">
         }
     </div>
-    <script>
-        Galleria.loadTheme('Content/galleria/themes/classic/galleria.classic.min.js');
-        
-        Galleria.run('#galleria');
-        
-    </script>
 </div>
 
