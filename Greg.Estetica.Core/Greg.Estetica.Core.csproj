@@ -61,8 +61,9 @@
     <Compile Include="Model\Photo.cs" />
     <Compile Include="Model\PriceList\PriceGroupListItem.cs" />
     <Compile Include="Model\PriceList\PriceList.cs" />
-    <Compile Include="Model\Promotion.cs" />
-    <Compile Include="Model\PromotionItem.cs" />
+    <Compile Include="Model\Promotions\ExtendedPromotionItem.cs" />
+    <Compile Include="Model\Promotions\Promotion.cs" />
+    <Compile Include="Model\Promotions\PromotionItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,6 +8,7 @@ using Greg.Estetica.Core.Interfaces;
 using Greg.Estetica.Core.IoC;
 using Greg.Estetica.Core.Model;
 using Greg.Estetica.Core.Model.PriceList;
+using Greg.Estetica.Core.Model.Promotions;
 using Moq;
 
 namespace Greg.Estetica.WebUI.Bll

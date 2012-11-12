@@ -207,6 +207,7 @@
     <Content Include="Content\galleria\themes\classic\galleria.classic.min.js" />
     <Content Include="Content\ie6fix.css" />
     <Content Include="Content\layout.css" />
+    <Content Include="Content\Slides\global.css" />
     <Content Include="Content\StyleExtension.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -483,6 +484,21 @@
     <Content Include="Images\Promotions\PromoBaseBcg.gif" />
     <Content Include="Images\Promotions\PromoBaseBcg50.gif" />
     <Content Include="Images\Promotions\PromotionBaseBackground.gif" />
+    <Content Include="Images\Slides\arrow-next.png" />
+    <Content Include="Images\Slides\arrow-prev.png" />
+    <Content Include="Images\Slides\background.png" />
+    <Content Include="Images\Slides\example-frame.png" />
+    <Content Include="Images\Slides\loading.gif" />
+    <Content Include="Images\Slides\new-ribbon.png" />
+    <Content Include="Images\Slides\pagination.png" />
+    <Content Include="Images\Slides\slide-1.jpg" />
+    <Content Include="Images\Slides\slide-2.jpg" />
+    <Content Include="Images\Slides\slide-3.jpg" />
+    <Content Include="Images\Slides\slide-4.jpg" />
+    <Content Include="Images\Slides\slide-5.jpg" />
+    <Content Include="Images\Slides\slide-6.jpg" />
+    <Content Include="Images\Slides\slide-7.jpg" />
+    <Content Include="Images\Slides\slide.jpg" />
     <Content Include="Images\spacer.gif" />
     <Content Include="Scripts\Custom\Accordion.js" />
     <Content Include="Scripts\Custom\Gallery.js" />
@@ -505,6 +521,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\slides.min.jquery.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
