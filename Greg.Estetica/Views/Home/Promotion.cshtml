@@ -1,20 +1,7 @@
 ﻿@{
     ViewBag.Title = "Promotion";
 }
-<style type="text/css" media="screen">
-    .slides_container
-    {
-        width: 545px;
-        height: 450px;
-    }
 
-        .slides_container div
-        {
-            width: 545px;
-            height: 450px;
-            display: block;
-        }
-</style>
 <script>
     $(function () {
         $('#slides').slides({
@@ -29,21 +16,77 @@
 <div id="container">
     <div id="example">
         <div id="slides">
+            @*CONTAINER*@
             <div class="slides_container">
-                <div style="background-color: yellowgreen">
-                    <h3>AAAAAAAAAAAAAAAAAAAA</h3>
+                <div class="promotionCard">
+                    <table class="promotionCardTable">
+                        <!-- Pierwszy wiersz -->
+                        <tr>
+                            <td class="promotionCardTableFR" colspan="2">
+                                <h1><span>!!! PROMOCJA !!!</span></h1>
+                            </td>
+                        </tr>
+                        
+                        <!-- Drugi wiersz -->
+                        <tr>
+                            <td class="promotionCardTableSR1">
+                                <h1>AAA</h1>
+                            </td>
+                            <td class="promotionCardTableSR2">
+                                <p>AAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAA AAAAAAAAAAAAAAA</p>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div style="background-color: yellowgreen">
-                    <h3>AAAAAAAAAAAAAAAAAAAA</h3>
+                <div class="promotionCard">
+                    <table class="promotionCardTable">
+                        <!-- Pierwszy wiersz -->
+                        <tr>
+                            <td class="promotionCardTableFR" colspan="2">
+                                <h1><span>!!! PROMOCJA !!!</span></h1>
+                            </td>
+                        </tr>
+                        
+                        <!-- Drugi wiersz -->
+                        <tr>
+                            <td class="promotionCardTableSR1">
+                                <h1>AAA</h1>
+                            </td>
+                            <td class="promotionCardTableSR2">
+                                <p>AAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAA AAAAAAAAAAAAAAA</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="promotionCard">
+                    <table class="promotionCardTable">
+                        <!-- Pierwszy wiersz -->
+                        <tr>
+                            <td class="promotionCardTableFR" colspan="2">
+                                <h1><span>!!! PROMOCJA !!!</span></h1>
+                            </td>
+                        </tr>
+                        
+                        <!-- Drugi wiersz -->
+                        <tr>
+                            <td class="promotionCardTableSR1">
+                                <h1>AAA</h1>
+                            </td>
+                            <td class="promotionCardTableSR2">
+                                <p>AAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAA AAAAAAAAAAAAAAA</p>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
+            @*------------------------------------------------------------------------*@
             <a href="#" class="prev">
                 <img src="../../Images/Slides/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
             <a href="#" class="next">
                 <img src="../../Images/Slides/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
         </div>
-        <img src="../../Images/Slides/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">
     </div>
 </div>
+<p style="height: 190px"></p>
 
 
