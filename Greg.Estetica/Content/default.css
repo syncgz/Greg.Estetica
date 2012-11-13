@@ -135,6 +135,7 @@ hr {
 	width: 640px;
 	padding: 27px 22px 21px 24px;
 	background: url(../Images/bg2_07.jpg) no-repeat left bottom;
+    height: 100%;
 }
 
 /** SIDEBAR */
@@ -304,10 +305,12 @@ ul.style2 li span {
 
 #bg1 {
 	background: url(../Images/bg3_02.jpg) repeat-y left top;
+    height: 95%;
 }
 
 #bg2 {
 	background: url(../Images/bg3_01.jpg) no-repeat left top;
+    height: 98%;
 }
 
 #bg3 {
@@ -315,6 +318,7 @@ ul.style2 li span {
 	width: 580px;
 	padding: 40px 30px 40px 30px;
 	background: url(../Images/bg3_03.jpg) no-repeat left bottom;
+    height: 98%;
 }
 
 /** BOX2 DESIGN */
