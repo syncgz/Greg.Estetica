@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Greg.Estetica.Core.Model
+namespace Greg.Estetica.Core.Model.Gallery
 {
     public class Gallery
     {

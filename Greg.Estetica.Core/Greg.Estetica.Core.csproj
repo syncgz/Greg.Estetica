@@ -56,9 +56,9 @@
     <Compile Include="Factories\CustomControllerFactory.cs" />
     <Compile Include="Interfaces\IContainerIoC.cs" />
     <Compile Include="Interfaces\IPromotionRepository.cs" />
-    <Compile Include="Model\Gallery.cs" />
+    <Compile Include="Model\Gallery\Gallery.cs" />
     <Compile Include="Model\PriceList\PriceGroup.cs" />
-    <Compile Include="Model\Photo.cs" />
+    <Compile Include="Model\Gallery\Photo.cs" />
     <Compile Include="Model\PriceList\PriceGroupListItem.cs" />
     <Compile Include="Model\PriceList\PriceList.cs" />
     <Compile Include="Model\Promotions\ExtendedPromotionItem.cs" />

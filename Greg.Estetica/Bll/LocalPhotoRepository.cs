@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Greg.Estetica.Core.Interfaces;
 using Greg.Estetica.Core.Model;
+using Greg.Estetica.Core.Model.Gallery;
 
 
 namespace Greg.Estetica.WebUI.Bll

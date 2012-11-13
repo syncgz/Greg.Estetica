@@ -6,10 +6,9 @@ namespace Greg.Estetica.Core.Model.Promotions
     {
         public String ImagePath { get; set; }
 
-        public String Description { get; set; }
-
         public String Title { get; set; }
 
+        public String Description { get; set; }
         public Uri Link { get; set; }
     }
 }

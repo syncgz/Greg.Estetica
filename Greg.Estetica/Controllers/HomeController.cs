@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using Greg.Estetica.Core.Interfaces;
 using Greg.Estetica.Core.Model;
+using Greg.Estetica.Core.Model.Gallery;
 using Greg.Estetica.Core.Model.Promotions;
 
 namespace Greg.Estetica.Controllers
