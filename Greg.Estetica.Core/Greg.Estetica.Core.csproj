@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\Cache.cs" />
+    <Compile Include="Cache\CacheItemEnum.cs" />
     <Compile Include="Enum\SectionName.cs" />
     <Compile Include="Interfaces\IPhotoRepository.cs" />
     <Compile Include="Interfaces\IPriceListRepository.cs" />
@@ -63,7 +66,7 @@
     <Compile Include="Model\PriceList\PriceList.cs" />
     <Compile Include="Model\Promotions\ExtendedPromotionItem.cs" />
     <Compile Include="Model\Promotions\Promotion.cs" />
-    <Compile Include="Model\Promotions\PromotionItem.cs" />
+    <Compile Include="Model\Promotions\SidebarPromotionItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

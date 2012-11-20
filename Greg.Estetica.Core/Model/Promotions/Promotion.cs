@@ -2,11 +2,11 @@
 
 namespace Greg.Estetica.Core.Model.Promotions
 {
-    public class Promotion
+    public class Promotion<T>
     {
-        public List<PromotionItem> Promotions;
+        public List<T> Promotions;
 
-        public Promotion(List<PromotionItem> list)
+        public Promotion(List<T> list)
         {
             Promotions = list;
         }

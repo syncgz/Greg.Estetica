@@ -9,6 +9,6 @@ namespace Greg.Estetica.Core.Interfaces
 {
     public interface IPromotionRepository
     {
-        List<PromotionItem> GetPromotionList();
+        List<SidebarPromotionItem> GetPromotionList();
     }
 }

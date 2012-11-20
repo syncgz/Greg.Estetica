@@ -18,7 +18,9 @@ namespace Greg.Estetica.WebUI.Bll
         public static void Composite()
         {
             Container.RegisterType(RegisterIPromotionRepository());
+            
             Container.RegisterType(RegisterIPhotoRepository());
+            
             Container.RegisterType(RegisterIPriceListRepository());
         }
 
@@ -27,20 +29,20 @@ namespace Greg.Estetica.WebUI.Bll
             Mock<IPromotionRepository> mock = new Mock<IPromotionRepository>();
 
             mock.Setup(x => x.GetPromotionList()).Returns(
-                new List<PromotionItem>()
+                new List<SidebarPromotionItem>()
                     {
-                            new PromotionItem()
+                            new SidebarPromotionItem()
                                 {
                                     Description = "Promocja na paznokcie.", 
                                     ImagePath = "~/images/picture4.gif", 
                                     Link = new Uri("http://www.wp.pl"), 
                                     Title = "Promocja A"
                                 },
-                            new PromotionItem()
+                            new SidebarPromotionItem()
                             {Description = "Promocja na zele", ImagePath ="~/Images/Promotions/PromotionBaseBackground.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja B"},
-                            new PromotionItem()
+                            new SidebarPromotionItem()
                             {Description = "Uruchomienie nowej strony internetowej.", ImagePath = "~/Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja C"},
-                            new PromotionItem()
+                            new SidebarPromotionItem()
                             {Description = "1111.", ImagePath = "~/Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja D"}
                     });
 

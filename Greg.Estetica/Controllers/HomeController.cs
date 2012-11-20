@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
+using Greg.Estetica.Core.Cache;
 using Greg.Estetica.Core.Interfaces;
 using Greg.Estetica.Core.Model;
 using Greg.Estetica.Core.Model.Gallery;
@@ -21,6 +22,8 @@ namespace Greg.Estetica.Controllers
         private IPhotoRepository _photoRepository;
 
         private IPriceListRepository _priceListRepository;
+
+        private Promotion<SidebarPromotionItem> _actualPromotion;
 
         #endregion
 
@@ -120,7 +123,16 @@ namespace Greg.Estetica.Controllers
 
         public PartialViewResult Promotions()
         {
-            return PartialView(new Promotion(_promotionRepository.GetPromotionList()));
+            var promo = Cache.Get<Promotion<SidebarPromotionItem>>(CacheItemEnum.Promotions);
+            
+            if(promo == null)
+            {
+                promo = new Promotion<SidebarPromotionItem>(_promotionRepository.GetPromotionList());
+                
+                Cache.Set(promo,CacheItemEnum.Promotions);
+            }
+                
+            return PartialView();
         }
 
         public PartialViewResult Menu()
