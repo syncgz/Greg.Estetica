@@ -28,7 +28,7 @@ namespace Greg.Estetica.Core.Cache
 
             var cacheItem = cache[cacheItemType.ToString()];
 
-            return ConvertObject<T>(cacheItem);
+            return default(T);
 
         }
     }

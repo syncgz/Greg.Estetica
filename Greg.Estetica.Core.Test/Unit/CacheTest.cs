@@ -18,7 +18,7 @@ namespace Greg.Estetica.Core.Test.Unit
 
             testObj.Test = 20;
 
-            GenericConverter.Set(testObj, CacheItemEnum.Promotions);
+            //GenericConverter.Set(testObj, CacheItemEnum.Promotions);
 
             var result = Cache.Cache.Get<TestClass>(CacheItemEnum.Promotions);
 
