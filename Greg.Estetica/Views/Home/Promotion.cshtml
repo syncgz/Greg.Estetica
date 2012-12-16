@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Greg.Estetica.Core.Model.Promotions.Promotion<Greg.Estetica.Core.Model.Promotions.ExtendedPromotionItem>
+@{
     ViewBag.Title = "Promotion";
 }
 
@@ -18,66 +19,34 @@
         <div id="slides">
             @*CONTAINER*@
             <div class="slides_container">
-                <div class="promotionCard">
-                    <table class="promotionCardTable">
-                        <!-- Pierwszy wiersz -->
-                        <tr>
-                            <td class="promotionCardTableFR" colspan="2">
-                                <h1><span>!!! PROMOCJA !!!</span></h1>
-                            </td>
-                        </tr>
-                        
-                        <!-- Drugi wiersz -->
-                        <tr>
-                            <td class="promotionCardTableSR1">
-                                <h1>AAA</h1>
-                            </td>
-                            <td class="promotionCardTableSR2">
-                                <p>AAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAA AAAAAAAAAAAAAAA</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="promotionCard">
-                    <table class="promotionCardTable">
-                        <!-- Pierwszy wiersz -->
-                        <tr>
-                            <td class="promotionCardTableFR" colspan="2">
-                                <h1><span>!!! PROMOCJA !!!</span></h1>
-                            </td>
-                        </tr>
-                        
-                        <!-- Drugi wiersz -->
-                        <tr>
-                            <td class="promotionCardTableSR1">
-                                <h1>AAA</h1>
-                            </td>
-                            <td class="promotionCardTableSR2">
-                                <p>AAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAA AAAAAAAAAAAAAAA</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="promotionCard">
-                    <table class="promotionCardTable">
-                        <!-- Pierwszy wiersz -->
-                        <tr>
-                            <td class="promotionCardTableFR" colspan="2">
-                                <h1><span>!!! PROMOCJA !!!</span></h1>
-                            </td>
-                        </tr>
-                        
-                        <!-- Drugi wiersz -->
-                        <tr>
-                            <td class="promotionCardTableSR1">
-                                <h1>AAA</h1>
-                            </td>
-                            <td class="promotionCardTableSR2">
-                                <p>AAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAA AAAAAAAAAAAAAAA</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+
+                @foreach (var promo in Model.Promotions)
+                {
+                    <div class="promotionCard">
+                        <table class="promotionCardTable">
+                            <!-- Pierwszy wiersz -->
+                            <tr>
+                                <td class="promotionCardTableFR" colspan="2">
+                                    <h1><span>!!! PROMOCJA !!!</span></h1>
+                                </td>
+                            </tr>
+
+                            <!-- Drugi wiersz -->
+                            <tr>
+                                <td class="promotionCardTableSR1">
+                                    <div class="image-style3">
+                                            <img src=@Url.Content(promo.ImagePath) width="66" height="69" alt="" />
+                                        @*<div class="thumbnails">
+                                        </div>*@
+                                    </div>
+                                </td>
+                                <td class="promotionCardTableSR2">
+                                    <p>@promo.LongDescription</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>   
+                }
             </div>
             @*------------------------------------------------------------------------*@
             <a href="#" class="prev">

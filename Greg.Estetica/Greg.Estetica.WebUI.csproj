@@ -39,6 +39,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Greg.Lib.Cache.MemoryCache">
+      <HintPath>..\Lib\Greg.Lib.Cache.MemoryCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Greg.Lib.CodeSnippet">
+      <HintPath>..\Lib\Greg.Lib.CodeSnippet.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Moq, Version=4.0.10827.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -298,6 +304,7 @@
     <Content Include="Images\bg3_04.jpg" />
     <Content Include="Images\bg3_05.jpg" />
     <Content Include="Images\bg3_06.jpg" />
+    <Content Include="Images\Construction.jpg" />
     <Content Include="Images\Gallery\Photos\100_0386.jpg" />
     <Content Include="Images\Gallery\Photos\100_0557.jpg" />
     <Content Include="Images\Gallery\Photos\100_0627.jpg" />
@@ -482,8 +489,10 @@
     <Content Include="Images\picture3.gif" />
     <Content Include="Images\picture4.gif" />
     <Content Include="Images\picture5.gif" />
+    <Content Include="Images\Promotions\PromoInfo3.gif" />
     <Content Include="Images\Promotions\PromoBaseBcg.gif" />
     <Content Include="Images\Promotions\PromoBaseBcg50.gif" />
+    <Content Include="Images\Promotions\PromoInfo.jpg" />
     <Content Include="Images\Promotions\PromotionBaseBackground.gif" />
     <Content Include="Images\Slides\arrow-next.png" />
     <Content Include="Images\Slides\arrow-prev.png" />
@@ -501,6 +510,7 @@
     <Content Include="Images\Slides\slide-7.jpg" />
     <Content Include="Images\Slides\slide.jpg" />
     <Content Include="Images\spacer.gif" />
+    <Content Include="Images\under_construction.png" />
     <Content Include="Scripts\Custom\Accordion.js" />
     <Content Include="Scripts\Custom\Gallery.js" />
     <Content Include="Scripts\Custom\Enums\MenuItemEnum.js" />
@@ -557,6 +567,8 @@
     <Content Include="Views\Home\Sidebar.cshtml" />
     <Content Include="Views\Home\Sidebox.cshtml" />
     <Content Include="Content\galleria\LICENSE" />
+    <Content Include="Views\Home\UnderConstruction.cshtml" />
+    <Content Include="Views\Home\Statistics.cshtml" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Mvc.resources.dll" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Http.WebHost.resources.dll" />
     <None Include="_bin_deployableAssemblies\pl\System.Web.Http.SelfHost.resources.dll" />
@@ -574,9 +586,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />

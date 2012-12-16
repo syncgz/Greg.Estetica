@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
-using Greg.Estetica.Core.Cache;
+using Greg.Estetica.Core.Enum;
 using Greg.Estetica.Core.Interfaces;
 using Greg.Estetica.Core.Model;
 using Greg.Estetica.Core.Model.Gallery;
@@ -81,6 +81,11 @@ namespace Greg.Estetica.Controllers
             return View();
         }
 
+        public ActionResult Statistics()
+        {
+            return View();
+        }
+
         #endregion
 
         #region Partials View
@@ -103,7 +108,8 @@ namespace Greg.Estetica.Controllers
 
         public ActionResult SellingPartial()
         {
-            return AjaxWrapper("Selling");
+            //return AjaxWrapper("Selling");
+            return AjaxWrapper("UnderConstruction");
         }
 
         public ActionResult GalleryPartial()
@@ -113,7 +119,21 @@ namespace Greg.Estetica.Controllers
 
         public ActionResult PromotionPartial()
         {
-            return AjaxWrapper("Promotion");
+            //TODO: przywrocic pobieranie promocji
+            //var promo = Greg.Lib.Cache.MemoryCache.Cache.Get<Promotion<SidebarPromotionItem>>(CacheMap.PROMOTION_LIST);
+
+            //if (promo == null)
+            //{
+            //    promo = new Promotion<SidebarPromotionItem>(_promotionRepository.GetPromotionList());
+
+            //    Greg.Lib.Cache.MemoryCache.Cache.Set(promo, CacheMap.PROMOTION_LIST);
+            //}
+
+            //Promotion<ExtendedPromotionItem> item = new Promotion<ExtendedPromotionItem>(promo.Promotions.Cast<ExtendedPromotionItem>().ToList());
+
+            //return AjaxWrapper("Promotion",item);
+
+            return AjaxWrapper("UnderConstruction");
         }
 
         public ActionResult ContactPartial()
@@ -123,16 +143,16 @@ namespace Greg.Estetica.Controllers
 
         public PartialViewResult Promotions()
         {
-            var promo = Cache.Get<Promotion<SidebarPromotionItem>>(CacheItemEnum.Promotions);
-            
-            if(promo == null)
+            var promo = Greg.Lib.Cache.MemoryCache.Cache.Get<Promotion<SidebarPromotionItem>>(CacheMap.PROMOTION_LIST);
+
+            if (promo == null)
             {
                 promo = new Promotion<SidebarPromotionItem>(_promotionRepository.GetPromotionList());
-                
-                Cache.Set(promo,CacheItemEnum.Promotions);
+
+                Greg.Lib.Cache.MemoryCache.Cache.Set(promo,CacheMap.PROMOTION_LIST);
             }
                 
-            return PartialView();
+            return PartialView(promo);
         }
 
         public PartialViewResult Menu()
@@ -144,11 +164,11 @@ namespace Greg.Estetica.Controllers
 
         #region Helpers
 
-        private ActionResult AjaxWrapper(string action,string controller = "")
+        private ActionResult AjaxWrapper(string action,Object model = null,string controller = "")
         {
             if(Request.IsAjaxRequest())
             {
-                return PartialView(action);
+                return PartialView(action,model);
             }
 
             return View(action);

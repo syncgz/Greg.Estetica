@@ -31,19 +31,13 @@ namespace Greg.Estetica.WebUI.Bll
             mock.Setup(x => x.GetPromotionList()).Returns(
                 new List<SidebarPromotionItem>()
                     {
-                            new SidebarPromotionItem()
-                                {
-                                    Description = "Promocja na paznokcie.", 
-                                    ImagePath = "~/images/picture4.gif", 
-                                    Link = new Uri("http://www.wp.pl"), 
-                                    Title = "Promocja A"
-                                },
-                            new SidebarPromotionItem()
-                            {Description = "Promocja na zele", ImagePath ="~/Images/Promotions/PromotionBaseBackground.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja B"},
-                            new SidebarPromotionItem()
-                            {Description = "Uruchomienie nowej strony internetowej.", ImagePath = "~/Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja C"},
-                            new SidebarPromotionItem()
-                            {Description = "1111.", ImagePath = "~/Images/Promotions/PromoBaseBcg50.gif", Link = new Uri("http://www.wp.pl"), Title = "Promocja D"}
+                            //new ExtendedPromotionItem(1,"~/Images/Promotions/PromoBaseBcg50.gif","Title","Description",new Uri("http://www.wp.pl"),@"Bayern był zdecydowanym faworytem meczu we Freiburgu i nie zawiódł on swoich kibiców. Bawarczycy objęli prowadzenie już w 12. minucie meczu, kiedy rzut karny podyktowany za zagranie ręką jednego z gospodarzy wykorzystał Thomas Mueller. "),
+                            //new ExtendedPromotionItem(1,"~/Images/Promotions/PromoBaseBcg50.gif","Title","Description",new Uri("http://www.wp.pl"),@"Bayern był zdecydowanym faworytem meczu we Freiburgu i nie zawiódł on swoich kibiców. Bawarczycy objęli prowadzenie już w 12. minucie meczu, kiedy rzut karny podyktowany za zagranie ręką jednego z gospodarzy wykorzystał Thomas Mueller. "),
+                            //new ExtendedPromotionItem(1,"~/Images/Promotions/PromoBaseBcg50.gif","Title","Description",new Uri("http://www.wp.pl"),@"Bayern był zdecydowanym faworytem meczu we Freiburgu i nie zawiódł on swoich kibiców. Bawarczycy objęli prowadzenie już w 12. minucie meczu, kiedy rzut karny podyktowany za zagranie ręką jednego z gospodarzy wykorzystał Thomas Mueller. "),
+                            //new ExtendedPromotionItem(1,"~/Images/Promotions/PromoBaseBcg50.gif","Title","Description",new Uri("http://www.wp.pl"),@"Bayern był zdecydowanym faworytem meczu we Freiburgu i nie zawiódł on swoich kibiców. Bawarczycy objęli prowadzenie już w 12. minucie meczu, kiedy rzut karny podyktowany za zagranie ręką jednego z gospodarzy wykorzystał Thomas Mueller. "),
+                            //new ExtendedPromotionItem(1,"~/Images/Promotions/PromoBaseBcg50.gif","Title","Description",new Uri("http://www.wp.pl"),@"Bayern był zdecydowanym faworytem meczu we Freiburgu i nie zawiódł on swoich kibiców. Bawarczycy objęli prowadzenie już w 12. minucie meczu, kiedy rzut karny podyktowany za zagranie ręką jednego z gospodarzy wykorzystał Thomas Mueller. "),
+                            new ExtendedPromotionItem(1,"~/Images/Promotions/PromoInfo.gif","Nowa strona","Urochomienie www.estetica.rybnik.pl",new Uri("http://www.estetica.rybnik.pl"),@"")
+                            
                     });
 
             return mock.Object;

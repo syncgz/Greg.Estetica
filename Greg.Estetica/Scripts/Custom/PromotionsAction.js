@@ -31,13 +31,13 @@ function DisplayPromotions()
             index3 = CalculateIndex(index3);
         }
 
-        //console.log("Index1: " + index1);
-        //console.log("Index2: " + index2);
-        //console.log("Index3: " + index3);
-
         ShowItem(allElements.get(index1));
         ShowItem(allElements.get(index2));
         ShowItem(allElements.get(index3));
+    }
+    else
+    {
+        allElements.css("display", "block");
     }
 }
 
